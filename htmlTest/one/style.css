@@ -17,7 +17,7 @@ canvas {
 }
 
 .different {
-  position:absolute;
+  position:relative;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', serif;
   top:100px;
   left:150px;
