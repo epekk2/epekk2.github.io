@@ -16,13 +16,11 @@ canvas {
   font-size:30px;
 }
 
-.different {
-  position:relative;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', serif;
-  top:100px;
-  left:200px;
-  text-decoration: none;
-  color:green;
-  font-size:30px;
+.hello {
+ color:red;
+  top:50px;
+  left:50px;
+  
 }
+  
 .sketchLink:hover{color:yellow}
