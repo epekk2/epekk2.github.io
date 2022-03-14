@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+.sketchLink {
+  position:relative;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', serif;
+  top:100px;
+  left:150px;
+  text-decoration: none;
+  color:blue;
+  font-size:30px;
+}
+
+.different {
+  position:absolute;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', serif;
+  top:100px;
+  left:150px;
+  text-decoration: none;
+  color:green;
+  font-size:30px;
+}
+.sketchLink:hover{color:yellow}
