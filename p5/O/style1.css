@@ -1,0 +1,14 @@
+
+canvas {
+  display: block;
+}
+
+.col-2 {
+  background-color: #c4fffc;
+  position: relative;
+  width: 36%;
+  float: right;
+  text-align: center;
+  height: 100%;
+  z-index: 1010101010;
+}
