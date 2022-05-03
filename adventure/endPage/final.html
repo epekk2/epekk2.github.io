@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="../p5.js"></script>
+    <script src="../p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <meta charset="utf-8">
+
+</head>
+<body>
+
+<div style="text-align: center" id="inputs">
+
+    <h4> Enter your final health </h4>
+
+    <label for="health">
+        <input type="number" id="health" placeholder="health">
+    </label>
+
+</div>
+
+<div id="sketch">
+    <script src="final.js"></script>
+</div>
+
+
+
+<button onclick="startClicked();"> Back to start </button>
+
+<script>
+    function startClicked() {
+        window.location.href = "../index.html";
+    }
+
+
+</script>
+
+</body></html>
