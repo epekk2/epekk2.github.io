@@ -22,7 +22,7 @@ function draw() {
   setCharisma();
 
   text("You are walking home from school and someone stops you and tells you to give them" +
-      "all of your money, what do you do?", 200, 200);
+      " all of your money, what do you do?", 200, 200);
 
 }
 

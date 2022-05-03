@@ -12,7 +12,7 @@ function draw() {
     textSize(40);
 
 
-    text("You weren't strong enough! Now you've been robbed, and beaten :(", 200, 200);
+    text("You weren't strong enough! Now you've\n been robbed, and beaten :(", 200, 200);
 
     text("He beat you pretty bad, lose 40 hp", 200, 350);
 }

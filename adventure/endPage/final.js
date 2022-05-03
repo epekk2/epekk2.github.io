@@ -15,7 +15,7 @@ function draw() {
 
     setHealth();
 
-    text("If you have 100 health remaining:\n you have a good understanding of\n your own strengths and weaknesses.", 200, 200);
+    text("If you have 100 health remaining:\n you have a good understanding of\n your own strengths and weaknesses.\n Try again to improve!", 200, 200);
 
 }
 
