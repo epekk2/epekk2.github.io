@@ -1,64 +1,45 @@
-var inp;
-var button;
-var inp1;
-var inp2;
-var button1;
-var button2;
-
+var strength = 0;
+var intel = 0;
+var char = 0;
 function setup() {
-  createCanvas(400, 400);
-  
-  inp = createInput('Enter 1-10');
-  inp.position(180, 135);
-  inp.size(100);
-  button = createButton("submit");
-  button.position(280, 135);
-  button.mousePressed(setStrength);
-  
-  inp1 = createInput('Enter 1-10');
-  inp1.position(190, 235);
-  inp1.size(100);
-  button1 = createButton("submit");
-  button1.position(280, 235);
-  button1.mousePressed(setIntel);
-  
-  inp2 = createInput('Enter 1-10');
-  inp2.position(180, 335);
-  inp2.size(100);
-  button2 = createButton("submit");
-  button2.position(280, 335);
-  button2.mousePressed(setCharisma);
-  
+ var canvas = createCanvas(1200,500);
+ canvas.parent('sketch');
 }
 
 function draw() {
   background(220);
-  
-  textSize(20);
-  text("Choose your stats", 100, 50);
-  
-  text("Strength:", 75, 150);
-  text("Intelligence:", 75, 250);
-  text("Charisma:", 75, 350);
-  
+
+  line(0, 100, 1200, 100);
+
+  textSize(40);
+  text("Health: 100", 50, 65);
+  text("Strength: " + strength, 290, 65);
+  text("Intelligence: " + intel, 550, 65);
+  text("Charisma: " + char, 900, 65);
+
   setStrength();
   setIntel();
   setCharisma();
 
+  text("Prepare to make difficult choices. Your selected\n " +
+      "traits determine the outcomes so be careful!", 200, 200);
+
+  text("Practice entering the stats above, you will need \nto re-enter them on a few pages so \ntry to " +
+      "remember them!", 200, 350);
+
+
 }
 
-var strength = 0;
-let intel = 0;
-let char = 0;
+
 
 function setStrength() {
-  strength = inp.value();
+  strength = document.getElementById("strength").value;
 }
 
 function setIntel() {
-  intel = inp1.value();
+  intel = document.getElementById("intel").value;
 }
 
 function setCharisma() {
-  char = inp2.value();
+  char = document.getElementById("char").value;
 }

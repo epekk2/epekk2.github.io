@@ -7,21 +7,24 @@ function setup() {
 }
 
 function draw() {
-    background(255, 153, 153);
+    background(220);
+
+    line(0, 100, 1200, 100);
 
     textSize(40);
+    text("Health: 100", 50, 65);
+    text("Strength: " + strength, 290, 65);
+    text("Intelligence: " + intel, 550, 65);
+    text("Charisma: " + char, 900, 65);
 
     setStrength();
     setIntel();
     setCharisma();
 
-    text("You get a running start and JUMP!\n Only not far enough and you fall into the lake", 200, 200);
-
-    text("You landed on some rocks weirdly\n lose 15 health", 200, 350);
-
+    text("You are walking home from school and someone stops\n " + "you and tells you to give them" +
+        "all\n of your money, what do you do?", 200, 200);
 
 }
-
 
 
 function setStrength() {

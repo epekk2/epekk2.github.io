@@ -6,10 +6,42 @@
 
   </head>
   <body>
-    <main>
-    </main>
-    <script src="chooseStats.js"></script>
-    <a href="firstSituation/start.html"> Continue </a>
-  
+
+  <div style="text-align: center" id="inputs">
+
+      <h4> Enter numbers adding up to 18 </h4>
+      <label for="strength">
+          <input type="number" id="strength" placeholder="strength:" align="center">
+      </label>
+
+      <br>
+
+      <label for="intel">
+          <input type="number" id="intel" placeholder="intelligence:">
+      </label>
+
+      <br>
+
+      <label for="char">
+          <input type="number" id="char" placeholder="charisma">
+      </label>
+
+  </div>
+
+    <div id="sketch">
+        <script src="chooseStats.js"></script>
+    </div>
+
+
+
+  <button onclick="startClicked();"> Start </button>
+
+  <script>
+      function startClicked() {
+        window.location.href = "firstSituation/start.html";
+      }
+
+
+  </script>
 
 </body></html>

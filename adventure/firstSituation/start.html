@@ -1,13 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../style.css">
-    <meta charset="utf-8" />
+<!DOCTYPE html><html lang="en"><head>
+  <script src="../p5.js"></script>
+  <script src="../p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <meta charset="utf-8">
 
-  </head>
-  <body>
-    <script src="start.js"></script>
-  </body>
-</html>
+</head>
+<body>
+
+<div style="text-align: center" id="inputs">
+
+  <h4> Enter numbers adding up to 18 </h4>
+  <label for="strength">
+    <input type="number" id="strength" placeholder="strength:" align="center">
+  </label>
+
+  <br>
+
+  <label for="intel">
+    <input type="number" id="intel" placeholder="intelligence:">
+  </label>
+
+  <br>
+
+  <label for="char">
+    <input type="number" id="char" placeholder="charisma">
+  </label>
+
+</div>
+
+<div id="sketch">
+  <script src="begin.js"></script>
+</div>
+
+
+
+<button onclick="strengthClicked();"> Fight them </button>
+<button onclick="charismaClicked();"> Connect with them </button>
+<button onclick="intelClicked();"> Disarm with logic </button>
+
+<script>
+  function strengthClicked(){
+    if (document.getElementById("strength").value > 6) {
+      window.location.href = "strWin.html";
+    } else {
+      window.location.href = "strLose.html";
+    }
+  }
+
+  function charismaClicked(){
+   if (document.getElementById("char").value > 6) {
+     window.location.href = "charWin.html";
+   } else {
+     window.location.href = "charLost.html";
+   }
+  }
+
+  function intelClicked() {
+    if (document.getElementById("intel").value > 6) {
+      window.location.href = "intWin.html";
+    } else {
+      window.location.href = "intLose.html";
+    }
+  }
+
+</script>
+
+</body></html>

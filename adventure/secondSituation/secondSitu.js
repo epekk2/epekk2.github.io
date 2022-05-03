@@ -1,28 +1,35 @@
 var strength = 0;
 var intel = 0;
 var char = 0;
+var health = 0;
 function setup() {
     var canvas = createCanvas(1200,500);
     canvas.parent('sketch');
 }
 
 function draw() {
-    background(255, 153, 153);
+    background(220);
+
+    line(0, 100, 1200, 100);
 
     textSize(40);
+    text("Health: " + health, 50, 65);
+    text("Strength: " + strength, 290, 65);
+    text("Intelligence: " + intel, 550, 65);
+    text("Charisma: " + char, 900, 65);
 
     setStrength();
     setIntel();
     setCharisma();
+    setHealth();
 
-    text("You get a running start and JUMP!\n Only not far enough and you fall into the lake", 200, 200);
-
-    text("You landed on some rocks weirdly\n lose 15 health", 200, 350);
-
+    text("You and a friend are in a forest and you \n want to get across a river, how \n do you cross it?", 200, 200);
 
 }
 
-
+function setHealth() {
+    health = document.getElementById("health").value;
+}
 
 function setStrength() {
     strength = document.getElementById("strength").value;
